@@ -69,6 +69,7 @@ function checkAnswer(currentLevel) {
     }  else {
         console.log("wrong");
         $("h1").text("Game over!! Press any key to Restart.");
+        new Audio("sounds/wrong.mp3").play();
         $("body").addClass("flash-body").fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100, function() {
             $("body").removeClass("flash-body");
         });
@@ -96,6 +97,7 @@ function startOver() {
 
 
     
+
 
 
 
